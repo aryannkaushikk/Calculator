@@ -62,6 +62,7 @@ body{
 }
 
 .inp>div>button{
+    text-align: center;
     outline: none;
     height: 78px;
     width: 78px;
