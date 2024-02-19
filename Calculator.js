@@ -69,8 +69,12 @@ function calc(key) {
                     }
             }
             inp.splice(0, inp.length);
-            console.log(result);
-            content.textContent = result.toString();
+            if ((result.toString()).indexOf(".")!=-1){
+                content.textContent = (result.toPrecision(9)).toString();
+            }
+            else{
+                content.textContent = result.toString();
+            }
             break;}
 
         case "AC": {
@@ -125,8 +129,12 @@ document.addEventListener("keypress",function(event){
                     }
             }
             inp.splice(0, inp.length);
-            console.log(result);
-            content.textContent = result.toString();
+            if ((result.toString()).indexOf(".")!=-1){
+                content.textContent = (result.toPrecision(9)).toString();
+            }
+            else{
+                content.textContent = result.toString();
+            }
             break;}
 
         case "a": {
